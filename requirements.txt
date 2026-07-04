@@ -1,0 +1,18 @@
+# Core
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+pydantic[email]>=2.9.0
+
+# SMTP
+aiosmtplib>=3.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+email-validator>=2.2.0
+
+# Production extras (recommended)
+# slowapi>=0.1.9          # for rate limiting
+# tenacity>=8.5.0         # for retry logic on SMTP failures
+# structlog>=24.4.0       # structured logging (optional upgrade)
