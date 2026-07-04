@@ -1,6 +1,6 @@
 # Core
 fastapi>=0.115.0
-uvicorn[standard]>=0.30.0
+uvicorn>=0.30.0
 pydantic>=2.9.0
 pydantic-settings>=2.5.0
 pydantic[email]>=2.9.0
@@ -11,6 +11,9 @@ aiosmtplib>=3.0.0
 # Utilities
 python-dotenv>=1.0.0
 email-validator>=2.2.0
+
+# Note for Vercel: Avoided [standard] extra on uvicorn to reduce potential build issues.
+# For local development you can install with: pip install "uvicorn[standard]"
 
 # Production extras (recommended)
 # slowapi>=0.1.9          # for rate limiting
